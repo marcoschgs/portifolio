@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to left, #FFB200, #FFE800 );
+        }
+
+        .box{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            background-color: #EEBB00;
+            padding: 15px;
+            border-radius: 15px;
+            width: 30%;
+        }
+
+        fieldset{
+            border:3px solid black;
+
+        }
+        legend{
+            border: 2px solid white;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            background-color: black;
+            border-radius: 9px;
+        }
+        .inputBox{
+
+            position: relative;
+
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 2px solid black;
+            outline: none;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+
+        }
+        
+       #dia, #hora{
+        border:none;
+        padding: 8px;
+        border-radius: 5px;
+        outline: none;
+       }
+      
+       #submit{
+        
+        width: 100%;
+        border:none;
+        padding: 15px;
+        color:black;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 8px;
+       }
+
+       .butao:hover {
+        background-image: linear-gradient(to left, #ebebeb, #f3e331 );
+
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+            <legend><b>AGENDAMENTOS</b></legend>
+            </br>
+            <div class="imputBox">
+                <label for="nome" class="labelInput"> <b>Seu nome: </b></label>
+                <input type="text" name="nome" id="nome" class="inputUser" required>
+                
+            </div>
+            <br> <br>
+            <div class="campo">
+                <label for="cortes" ><strong>Cortes: </strong></label>
+                <select id="cortes" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Corte Normal</option>
+                  <option>Corte Narvalhado</option>
+                  <option>Corte Infanil</option>
+                  <option>Progressiva</option>
+                  <option>Corte e barbar</option>
+                  <option>luzes</option>
+                  <option>Descoloração</option>  
+                </select>
+
+                <br><br>
+                
+                    <label for="dia"><b> Data para Agendar </b></label>
+                    <input type="date" name="dia" id="dia" required>
+                
+                <br><br>
+                
+                    <label for="hora"><b> hora para Agendar </b></label>
+                    <input type="time" name="hora" id="hora"  required>
+                    
+                
+            </div>
+            <br><br>
+            <input type="submit" name="submit" id="submit" class="butao">
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>
