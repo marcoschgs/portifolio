@@ -1,7 +1,7 @@
 # portifolio
 Comecei a desenvolver o meu portifólio no 1 semestre, fiz com auxílio de codigos e bibliotecas da internet, principalmente do bootstrap.
 
-TECNOLOGIAS ULTILIZADAS: Linguagens: - HTML - CSS - JavaScript
+TECNOLOGIAS ULTILIZADAS: Linguagens: - HTML - CSS - JavaScript - PHP
 
 - VS Code 
 
